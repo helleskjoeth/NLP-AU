@@ -38,7 +38,7 @@ class RNN(nn.Module):
 
         return F.log_softmax(x, dim=1)  # dim: batch_size*batch_max_len x num_tags
 
-    @staticmethod
+    @staticmethod # en function, der bliver brugt på hele den funktion nedenunder. 
     def loss_fn(outputs, labels):
         """
         Custom loss function. 

@@ -14,6 +14,11 @@ def batch(dataset: Iterable, batch_size: int) -> Iterable:
 
     Example:
         >>> batches = batch([1,2, 3, 4, 5], 2)
+        >>> next(batches) = (1,2)
+        >>> next(batches) = (3,4)
+        >>> next(batches) = (5,)
+        >>> next(batches) = ERROR
+        
         >>> print(list(batches))
         [(1, 2), (3, 4), (5,)]
     """
